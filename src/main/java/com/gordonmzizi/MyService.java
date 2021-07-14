@@ -1,22 +1,18 @@
 package com.gordonmzizi;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class MyService {
+
+    @Autowired
     private MyRepository repository;
-
-    //Implementing Constractor DI
-
-    /*
-     public MyService(MyRepository repository) {
-        this.repository = repository;
-    }
-    */
 
     public void getBusinessLogic(){
         System.out.println("Doing Business Logic");
         repository.getQuery();
     }
 
-    public void setRepository(MyRepository repository) {
-        this.repository = repository;
-    }
+
 }
