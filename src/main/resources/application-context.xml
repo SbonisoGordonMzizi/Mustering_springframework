@@ -5,7 +5,7 @@
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="MyService" class="com.gordonmzizi.MyService">
-    <constructor-arg ref="MyRepository"/>
+    <property name="repository" ref="MyRepository"/>
     </bean>
     <bean id="MyRepository" class="com.gordonmzizi.MyRepository"/>
 
