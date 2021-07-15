@@ -1,10 +1,11 @@
-package com.gordonmzizi;
+package com.gordonmzizi.persistance;
 
 
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class MyRepository {
+public class MyRepositoryImpl implements MyRepository {
+    @Override
     public void getQuery(){
         System.out.println("SELECT * FROM database");
     }
