@@ -1,5 +1,7 @@
 package com.gordonmzizi.businesslogic;
 
-public interface MyService {
+import org.springframework.context.EnvironmentAware;
+
+public interface MyService extends EnvironmentAware {
     void getBusinessLogic();
 }
